@@ -1,0 +1,18 @@
+{
+	"name" : "aggregate",
+	"k1_dog" : 2, 
+	"k2_dog" : 40,
+	"k_log" : 0,
+	"dim" : 2,
+	"thres_method" : "otsu",
+	"ostu_num" : 2,
+	"percent" : 0,
+	"area" : 0,
+	"intens_ratio" : 0,
+	"disk" : 0,
+	"ratio" : 0.15,
+	"bit" : 16,
+	"_comment" : "k1, kernel size for 1st gaussian filter in difference of gaussian; k2, kernel size for 1st gaussian filter in difference of gaussian; k_log, the kernel size for ricker wavelet; dim, the kernel dimension (2D or 3D); thres_method, otsu or percentage; ostu_num, number of classes after thresholding; percent, percentage pixels rejected during thresholding; area, number of pixels range accepted for a binary object; intens_ratio, how much over mean intensity of an image is accpeted; disk, radius of disk shape for the morphologcial opening; ratio, the acceptable ratio between mean of top5% pixels in an object and the saturation"
+}
+
+
