@@ -3,9 +3,9 @@
 
 %% add library and check license
 clc;clear;
-[status,errmsg] = load.checkToolBox('image_toolbox');
 libpath = uigetdir(pwd); %select the folder you put the code library, could type the specific path if the code library is always in the same path
 addpath(genpath(libpath));
+[status,errmsg] = load.checkToolBox('image_toolbox');
 
 %% scan files in the data folder and save their path and name 
 datapath = uigetdir(pwd); %select the folder you put the data
