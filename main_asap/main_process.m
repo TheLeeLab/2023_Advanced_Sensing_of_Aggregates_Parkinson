@@ -3,9 +3,9 @@
 
 %% add library and check license
 clc;clear;
-[status,errmsg] = load.checkToolBox('image_toolbox');
 libpath = uigetdir(pwd); %select the folder you put the code library, could type the specific path if the code library is always in the same path
 addpath(genpath(libpath));
+[status,errmsg] = load.checkToolBox('image_toolbox');
 
 %% load filenames
 T = readtable('metadata_example.xlsx');
