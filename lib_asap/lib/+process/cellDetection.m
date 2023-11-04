@@ -7,7 +7,11 @@ function BW = cellDetection(img,c_cell)
 % 
 % author : Bin Fu, Univerisity of Cambridge, bf341@cam.ac.uk
 
-    img1 = imgaussfilt(img,c_cell.k1_dog) - imgaussfilt(img,c_cell.k2_dog);
+    if c_cell.k1_dog == 0
+        img1 = img - imgaussfilt3(img,c_cell.k2_dog);
+    else
+        img1 = imgaussfilt3(img,c_cell.k1_dog) - imgaussfilt3(img,c_cell.k2_dog);
+    end
     BW   = core.threshold(img1,c_cell);
 
     for j = 1:size(BW,3)
