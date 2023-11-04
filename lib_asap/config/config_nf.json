@@ -5,7 +5,7 @@
 	"k_log" : 0,
 	"dim" : 3,
 	"thres_method" : "otsu",
-	"ostu_num" : 2,
+	"ostu_num" : 1,
 	"percent" : 0,
 	"area" : 
 	[
